@@ -1,0 +1,12 @@
+parameterized==0.8.1
+colorama==0.4.4
+
+# --- Testing Requirements --- #
+# ("pip install -r requirements.txt" also installs this, but "pip install -e ." won't.)
+
+
+
+pytest~=6.2.5
+selenium~=4.0.0
+setuptools~=58.3.0
+seleniumbase~=2.0.8
