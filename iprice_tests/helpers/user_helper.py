@@ -2,7 +2,7 @@ import random
 import string
 
 
-class SeleniumBases:
+class UserHelper:
 
     @staticmethod
     def get_random_chars():
