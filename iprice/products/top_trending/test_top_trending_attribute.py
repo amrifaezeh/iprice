@@ -12,16 +12,14 @@ class TestTopTrendingProductsListAttribute(BaseCase):
     def test_top_trending_list_attribute(self):
         self.open("https://iprice.my/")
         self.wait_for_element("#homepage > div.bg h1")
-        assert self.driver.find_element(
-            By.CSS_SELECTOR, "#homepage > div.C.I.l.eU > h2").text == "Top Trending Products"
+        assert self.find_element("#homepage > div.C.I.l.eU > h2").text == "Top Trending Products"
 
-        top_trending_list = len(self.driver.find_elements(
-            By.CSS_SELECTOR, "div.C.I.l.eU amp-carousel[height='46'] div.i-amphtml-carousel-scroll > a"))
+        top_trending_list = len(self.find_elements(
+            "div.C.I.l.eU amp-carousel[height='46'] div.i-amphtml-carousel-scroll > a"))
         print(top_trending_list)
 
         for i in range(top_trending_list):
-            element = self.driver.find_element(
-                By.CSS_SELECTOR,
+            element = self.find_element(
                 f"div.C.I.l.eU amp-carousel[height='46'] div.i-amphtml-carousel-scroll > a:nth-child({i ++1})")
             attrs = self.driver.execute_script(
                 'var items = {}; for (index = 0; index < arguments[0].attributes.length; ++index) '

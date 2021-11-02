@@ -13,22 +13,20 @@ class TestURLSRedirect(BaseCase):
         self.open("https://iprice.my/coupons/")
         self.wait_for_element("#coupon-overview header > h2")
         # verify of title
-        assert self.driver.find_element(
-            By.CSS_SELECTOR, "#coupon-overview header > h2").text == "Top Stores"
+        assert self.find_element("#coupon-overview header > h2").text == "Top Stores"
         # get the number of top stores
-        top_store_list = len(self.driver.find_elements(By.CSS_SELECTOR, "section[data-uat=\"top-stores\"] > div"))
+        top_store_list = len(self.find_elements("section[data-uat=\"top-stores\"] > div"))
         print(top_store_list)
 
         # get the urls
         for i in range(1, top_store_list):
             # get all urls
-            urls = self.driver.find_element(
-                By.CSS_SELECTOR,
+            urls = self.find_element(
                 f"#coupon-overview div.mu.lD section[data-uat=\"top-stores\"] > div:nth-child({i ++1}) > a"
             ).get_attribute('href')
             print(f"{urls}")
             self.open(f"{urls}")
 
-            browser_url = self.driver.current_url
+            browser_url = self.get_current_url()
             assert urls == browser_url
             self.driver.back()
