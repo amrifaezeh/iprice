@@ -3,7 +3,7 @@ this is an assessment project that I did for iPrice
 
 > I noticed that the iPrice class names are **minimized** so all the css selectors I wrote is without any usage of the class 
 
-# Simple tests:
+## Simple tests:
 1. This contains 3 test, 
     - one to count "Find the best deals" item count, 
     - test to make sure all the "Top Trending Products" has "data-vars-cgt" attribute
