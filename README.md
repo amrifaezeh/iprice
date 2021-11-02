@@ -14,7 +14,7 @@ And User choose a Coupon
 When User copy the coupon and sign in with Email
 Then User is successfully navigated to the store
 
-![](iprice.gif)
+![iprice.gif](https://github.com/amrifaezeh/iprice/blob/main/iprice/asset/iprice.gif)
 
 ##how to run?
 
