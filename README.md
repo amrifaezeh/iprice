@@ -43,7 +43,7 @@ pytest iprice_tests/products/bdd_scenarios/test_claim_promo-code.py -s
 
 #### how the BDD run will look like: 
 
-this is an intersting demonstration as I show how to change tab with selenium and continue with different tab. it also change the tab back to previous tab if it couldn't find any code to copy 
+this is an intersting demonstration as I show how to change tab with selenium and continue with another tab. also if it couldn't find any code to copy then it will change to the previous tab and choose a different store and repeat this again until it reaches the maxium retry count 
 
 ![iprice.gif](doc/iprice.gif)
 
