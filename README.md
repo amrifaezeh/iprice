@@ -1,4 +1,4 @@
-# iPrice selenium test 
+# iPrice Selenium Test 
 a sample selenium project case study using iPrice product and coupon page.
 this project demonstrate simple tests with certain target to validate, and also **BDD** tests with a scenario to follow. Moreover, it demonstrates how to validate http request through http status code that is useful for **API** testing and **Integration** testing
 
