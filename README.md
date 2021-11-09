@@ -47,7 +47,12 @@ this is an intersting demonstration as I show how to change tab with selenium an
 
 ![iprice.gif](doc/iprice.gif)
 
+### Possible intersting code 
+moreover than the change tab that I showed in previous gif, since iPrice has minimized `css` and should avoid use any css selectore in this case, I demonstrated how to find an element with text and traverse the dom and find it's parent using XPATH 
 
+```python
+best_deals_container = self.find_element('//h1[text()="Find the Best Deals Online"]/../..', By.XPATH)
+```
 ## how to run?
 
 ```
